@@ -22,4 +22,6 @@ class PacketWrapper private constructor(
     fun isBlockDig(): Boolean = receiving && (packetType == PacketType.Play.Client.PLAYER_DIGGING)
     fun isFlying(): Boolean = receiving && (packetType == PacketType.Play.Client.PLAYER_FLYING || packetType == PacketType.Play.Client.PLAYER_POSITION || packetType == PacketType.Play.Client.PLAYER_ROTATION || packetType == PacketType.Play.Client.PLAYER_POSITION_AND_ROTATION)
     fun isKeepAlive(): Boolean = receiving && (packetType == PacketType.Play.Client.KEEP_ALIVE)
+    fun isAbilities(): Boolean = receiving && (packetType == PacketType.Play.Client.PLAYER_ABILITIES)
+    fun isItemUse(): Boolean = receiving && (packetType == PacketType.Play.Client.ENTITY_ACTION)
 }
