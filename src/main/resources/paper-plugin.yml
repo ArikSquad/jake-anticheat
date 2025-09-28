@@ -1,0 +1,11 @@
+name: jake
+version: '1.0.0'
+main: eu.mikart.jake.Jake
+bootstrapper: eu.mikart.jake.JakeBootstrap
+api-version: '1.21'
+authors: [ ArikSquad ]
+description: Jake Anticheat is an experimental test
+permissions:
+  jake.alerts:
+    description: Allows the player to receive alerts about suspicious behavior.
+    default: op
